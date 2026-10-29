@@ -1,0 +1,28 @@
+Requirements:
+- add js file (link to html)
+- file initiates the starting view and prompt the user to play a game
+- use global variables (number of rounds, game score)
+- add event handler to handle when dice is clicked
+- use array for current roll of dice and global array to accumulate rolls for overall game
+- functions used for processing a roll, updating html display, and game over
+
+Parts:
+code to roll dice (values, images)
+code to process roll to determine score
+code to update display and game state
+
+
+- 1 is 100 points
+- 5 is 50 points
+- if you get three of the same it is 100x the number (exception: three 1s is 1000)
+- 6 1s is an automatic win
+- a roll can consist of the above rules (Example: 4 1s is 1100)
+
+- dice will "roll" when the visitor clicks and stops after 1 second
+- roll is new random number (from 1-6) every 100ms for each die
+    (each photo needs to be associated to the correct die)
+- user cannot restart the roll once it has started (has to wait until it is finished)
+- pRolled heading displays the result of the roll
+- pRollScore adds to the game score (displayed in hScore)
+- tblRolls displays the roll list with most recent listed first
+- add number of rolls required at the end of the game to roundList Header

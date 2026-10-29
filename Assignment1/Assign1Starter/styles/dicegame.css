@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+ Filename:    dicegame.css
+ Author:      Skylar Magouliotis
+ Date:        2026-02-17
+ Purpose:     Assignment #1
+ */
+
+[id*="image"] {
+    height: 100px;
+    width: 100px;
+}
+#tblRolls td {
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+
+h1,
+h2,
+p,
+div {
+    text-align: center;
+}
+/* classes for hiding and displaying the reset button */
+.hidden {
+    display: none;
+}
+.displayed {
+    display: inline;
+}
+
+#hScore {
+    color: crimson;
+}
+#pRolled,
+#pRollScore {
+    color: forestgreen;
+}

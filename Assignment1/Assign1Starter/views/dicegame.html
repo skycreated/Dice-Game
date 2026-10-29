@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <!--
+    Filename:       dicegame.html
+    Author:         Skylar Magouliotis
+    Date:           2026-02-17
+    Purpose:        Assignment #1
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment #1 - Dice Game</title>
+    <link rel="stylesheet" href="../styles/dicegame.css" />
+    <script src="../scripts/dicegame.js" defer></script>
+  </head>
+  <body>
+    <section id="heading">
+      <h1>The Amazing Dice Game</h1>
+
+      <p>The rules of the game are:</p>
+      <p>
+        1. You have to get 5000 points, exactly <br />2. 1's count as 100, 5's
+        count as 50 <br />3. Three of a kind counts as the number x 100 except
+        1's which would be 1000 <br />4. Six 1's is an automatic, immediate win
+      </p>
+    </section>
+    <section id="maingame">
+      <p><strong>Click on any die to roll:</strong></p>
+
+      <p>
+        <img src="../images/dice1.png" alt="Image of die" id="image1" />
+        <img src="../images/dice2.png" alt="Image of die" id="image2" />
+        <img src="../images/dice3.png" alt="Image of die" id="image3" />
+        <img src="../images/dice4.png" alt="Image of die" id="image4" />
+        <img src="../images/dice5.png" alt="Image of die" id="image5" />
+        <img src="../images/dice6.png" alt="Image of die" id="image6" />
+      </p>
+
+      <h1 id="hScore">Overall Score: 0</h1>
+      <div>
+        <button id="btnRestart" class="hidden">Reset Game</button>
+      </div>
+      <h2 id="pRolled"></h2>
+      <h2 id="pRollScore"></h2>
+
+      <h2 id="roundListHeader">List of Rounds:</h2>
+      <p id="pTotalRolls">The following is a list of each round of the game:</p>
+      <table id="tblRolls"></table>
+    </section>
+  </body>
+</html>
